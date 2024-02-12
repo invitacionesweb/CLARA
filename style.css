@@ -51,11 +51,13 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content:center ;
+    align-items:center ;
     background-attachment: fixed;
 }
-
+.arrowdoble {
+    display: none;
+}
 .novios {
     animation-name: texto;
     animation-duration: 5s;
@@ -142,6 +144,16 @@ header {
      text-align: center;
      text-decoration: none;
  }
+ .play {
+    background: var(--color-secundario);
+    margin: 0;
+    padding: 0 0 20px 0;
+    color: var(--color-principal);
+    text-align: center;
+ }
+ .play p {
+    margin: 0;
+ }
  .icon {
      width: 40px;
      margin-bottom: 10px;
@@ -181,6 +193,7 @@ header {
     padding: 80px 0 80px 0 ;
     background-color: var(--color-principal);
 }
+.datos { width:300px;}
 .ubicacion-bloque {
     width: 40%;
     text-align: center;
@@ -364,12 +377,27 @@ footer img {
 }
 
 @media (max-width: 600px) {
-    header {
-        background-image: url(./img-editables/namephone.png);
-        background-attachment: unset;
-        text-align: center;
 
-    }
+header {
+    width: 100%;
+    height: 100vh;
+    padding: auto;
+    background-image: url(./img-editables/namephone.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center ;
+    align-items:flex-end ;
+    background-attachment: unset;
+}
+.arrowdoble {
+    display: block;
+    animation: bounce;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
 
     .novios .desk { 
     display: none;
