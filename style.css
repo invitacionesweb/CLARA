@@ -389,10 +389,11 @@ header {
     background-repeat: no-repeat;
     display: flex;
     justify-content:center ;
-    align-items:flex-end ;
+    align-items:center ;
     background-attachment: unset;
 }
 .arrowdoble {
+    margin-top: 360px;
     display: block;
     animation: bounce;
     animation-duration:2s;
